@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    }
+  },
+  "CommunicationServiceConnectionString": "endpoint=https://oasis-communication-email.india.communication.azure.com/;accesskey=AMIcjHnxIj21xqZdy84C5UUdyMJOazVXKAdCn83Yl0nj02xJF3fhJQQJ99AGACULyCpm3RQcAAAAAZCSAHuD",
+  "singleton": {
+    "listenerLockPeriod": "00:00:15"
+  }
+}

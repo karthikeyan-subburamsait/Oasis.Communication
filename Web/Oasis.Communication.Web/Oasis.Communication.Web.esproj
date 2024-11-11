@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.94-alpha">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Command to create an optimized build of the project that's ready for publishing -->
+    <ProductionBuildCommand>npm run build</ProductionBuildCommand>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\Oasis.Communication.Web</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\app\ScriptTags\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\ScriptTags\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\app\CommunicationAction\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\CommunicationAction\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\app\CommunicationHistory\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\CommunicationHistory\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\app\EventType\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\EventType\**" />
+  </ItemGroup>
+</Project>
